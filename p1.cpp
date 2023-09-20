@@ -18,4 +18,5 @@ int main() {
     } else {
         cout << " Not a valid entry " << endl;
     }
+    return 0;
 }
