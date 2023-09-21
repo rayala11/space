@@ -15,10 +15,21 @@ int main() {
     age = cy - by;
 
     if (bm<=cm && bd<cd) {
-        cout << age << " years old" endl;
+        cout << age << " years old" << endl;
     } else if (bm>=cm&&bd>cd){
         cout << age - 1 << " years old" << endl;
     } else {
         cout << "Invalid entry " << endl;
-    }
+    } 
+    if (bd<cd) {
+        cout << cd << " days old " << endl;
+    } else if (bd>cd) {
+        cout << 30 - cd << endl; }
+        else {
+            cout << " Invalid entry " << endl;
+        } 
+    if (bm<cm) {
+        cout << cm - bm << " Month old " << endl;
+    }       
+    
 }
