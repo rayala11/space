@@ -11,4 +11,4 @@ int main() {
             sum = sum + x;
         } x++;
     } cout << sum << endl;
-}
+}// go up by three, find divisible by 5( more efficient way)
