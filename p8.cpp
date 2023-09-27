@@ -6,7 +6,10 @@ int main() {
     int num;
     cin >> num;
 
-    while (!num%2==0) {
-        cout << "Prime " << endl;
-    } 
+    while (num%2==0) {
+        cout << "Not Prime " << endl;
+        break;
+    } if (!num%2==0) {
+        cout << "Prime Number " << endl;
+    }
 }
