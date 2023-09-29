@@ -12,4 +12,4 @@ int main() {
         sum= sum + prices;
         counter++;
     } cout << sum;
-}
+}//what is the price of item number 1? cout inside while looop
