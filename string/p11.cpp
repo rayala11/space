@@ -6,8 +6,6 @@
 using namespace std;
 
 int main() {
-    string s1;
-    getline(cin, s1);
-    istringstream iss(s1);
+    
 
 }
