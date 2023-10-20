@@ -3,21 +3,17 @@
  #include <iostream>
  using namespace std;
 
- int main() {
-    int mrows;
-    int ncolumns;
-    cin >> mrows >> ncolumns;
+ int main(){
+    int x;
+    int y;
 
-    int x = 0;
-    int j = 0;
-
-    while (x < mrows) {
-        cout << endl;
-        while ( j < ncolumns) {
-           
-            j++;
-        } cout << "* ";
-        cout << endl; 
-        x++;
+    for (x=0; x <= 10; x++) {
+        for (y=0; y <= 10; y++) {
+            if (x == 0 || x == 10 || y == 0 || y == 10) {
+                cout << "*";
+            } else {
+                cout << " "; }
+            
+        } cout << endl;
     }
  }

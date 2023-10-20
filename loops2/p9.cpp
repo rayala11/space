@@ -4,18 +4,17 @@
 using namespace std;
 
 int main() {
-    int i = 0;
-    int x = 0;
-    int n = 4;
-    
-
-    while (i <= 10) {
-       x = 0;
-        while (x <= i) {
-            cout << i;
-            x++;
-
+    int x;
+    int y;
+    int num;
+    cout << "Enter a number greater than 0 " << endl;
+    cin >> num;
+    int n = 1;
+    for (x = 1; x <= num; x++) {
+        for (y = 1; y <= x; y++) {
+            cout << n;
+            n++;
         } cout << endl;
-        i++;
+
     }
 }
