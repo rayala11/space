@@ -4,11 +4,18 @@ using namespace std;
 int main() {
     string s1;
     getline(cin, s1);
-    int i = 0;
+    
+    bool found = false;
 
-    for (i = 0; i<s1.length(); i++) {
-        if(s1[i]!= ' ') {
-            
+    for(char ch:s1) {
+        int count = 0;
+        for(char inner: s1) {
+            if(ch==inner) {
+                count++;
+            }
+        } if(count==1) {
+            found = true;
+            cout << ch << " ";
         }
     }
 }
