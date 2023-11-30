@@ -1,39 +1,32 @@
+//Create a program that reads 6 integers into two separate vectors. 
+//Perform element-wise addition of these two vectors and store the result in a third vector. Finally, print the resulting vector.
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
-    int balance = 4504;
-    int num;
-    int cash;
-    int sumCash=0;
-    int sumDebit=0;
-    int debit;
-    int check;
-    int sumChecks=0;
+    vector<int>v1;
+    vector<int>v2;
+    vector<int>v3;
+    int x;
+    int z;
     int i=0;
-    cout << "Enter entries for cash" << endl;
-    cin >> num;
-    while(i<num) {
-        cin >> cash;
-        sumCash+=cash;
+    int p=0;
+
+    while(i<6) {
+        cin >> x;
+        v1.push_back(x);
         i++;
-    } cout << "enter entries for debit card" << endl;
-    int num1;
-    cin >> num1;
-    int j=0;
-    while(j<num1) {
-        cin >> debit;
-        sumDebit+=debit;
-        j++;
-    } cout << "Enter entries for checks" << endl;
-    int num2;
-    int z=0;
-    cin >> num2;
-    while(z<num2) {
-        cin >> check;
-        sumChecks+=check;
-        z++;
+    }   while(p<6) {
+        cin >> z;
+        v2.push_back(z);
+        p++;
     }
-    cout << balance << " " << sumChecks << " " << sumDebit << " " << sumCash << endl;
-    cout << (balance+sumChecks) - (sumDebit+sumCash);
-} 
+    for(int h=0; h<6; h++) {
+        int result = v1[h]+v2[h];
+        v3.push_back(result);
+    }
+    for(int e : v3) {
+        cout << e << " ";
+    }
+}
