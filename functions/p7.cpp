@@ -3,21 +3,17 @@
 #include <iostream>
 using namespace std;
 
-string isPalindrome(string s1) {
-    bool status = true;
+bool isPalindrome(string s1) {
+    //bool status = true;
     for(int i=0; s1.length(); i++) {
         for(int j= s1.length()-1; j>=0; j-- ) {
-            if(s1[j]!=s1[i]) {
-                status = false;
+            if(s1[i]!=s1[j]) {
+                return false;
                 break;
             }
         }
-    } if(status) {
-        cout << "Palindrome " << endl;
-    } else {
-        cout << "Not Palindrome " << endl;
-    }
-     return ;
+    } 
+     return true;
 }
 
 int main() {
@@ -25,6 +21,10 @@ int main() {
     string s2;
     cin >> s2;
 
-    string s3 = isPalindrome(s2);
-    cout << s3;
+   if(isPalindrome(s2)) {
+    cout << s2 << " is palindrome" << endl;
+   } else {
+    cout << s2 << " is not palindrome " << endl;
+   }
+    
 }
